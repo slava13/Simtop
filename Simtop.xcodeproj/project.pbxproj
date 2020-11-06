@@ -1,0 +1,583 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C65C65282525CD4E005E60E4 /* PreferencesWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65C65272525CD4E005E60E4 /* PreferencesWindowController.swift */; };
+		C65C65372525DC2B005E60E4 /* Pods_Simtop.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC90470E271EC6D926D4F65A /* Pods_Simtop.framework */; };
+		C65C65382525DC2B005E60E4 /* Pods_Simtop.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AC90470E271EC6D926D4F65A /* Pods_Simtop.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C68EF046253072560094B00A /* HelperAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68EF045253072560094B00A /* HelperAppDelegate.swift */; };
+		C68EF04A253072570094B00A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C68EF049253072570094B00A /* Assets.xcassets */; };
+		C68EF04D253072570094B00A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C68EF04B253072570094B00A /* Main.storyboard */; };
+		C68EF054253076470094B00A /* SimTopLoginItem.app in CopyFiles */ = {isa = PBXBuildFile; fileRef = C68EF043253072560094B00A /* SimTopLoginItem.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F9D197D025227A3D00790D98 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D197CF25227A3D00790D98 /* AppDelegate.swift */; };
+		F9D197D225227A3D00790D98 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D197D125227A3D00790D98 /* ViewController.swift */; };
+		F9D197D425227A3F00790D98 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9D197D325227A3F00790D98 /* Assets.xcassets */; };
+		F9D197D725227A3F00790D98 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9D197D525227A3F00790D98 /* Main.storyboard */; };
+		F9D197E32522847C00790D98 /* ObjcBridgingHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = F9D197E22522847C00790D98 /* ObjcBridgingHelper.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C65C65392525DC2B005E60E4 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				C65C65382525DC2B005E60E4 /* Pods_Simtop.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C68EF053253076190094B00A /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Contents/Library/LoginItems;
+			dstSubfolderSpec = 1;
+			files = (
+				C68EF054253076470094B00A /* SimTopLoginItem.app in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		2B7B93C42FC4B8FDA376FD6F /* Pods-Simtop.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Simtop.release.xcconfig"; path = "Target Support Files/Pods-Simtop/Pods-Simtop.release.xcconfig"; sourceTree = "<group>"; };
+		8C01112861D15B9E8FA70B27 /* Pods-Simtop.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Simtop.debug.xcconfig"; path = "Target Support Files/Pods-Simtop/Pods-Simtop.debug.xcconfig"; sourceTree = "<group>"; };
+		AC90470E271EC6D926D4F65A /* Pods_Simtop.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Simtop.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C65C65272525CD4E005E60E4 /* PreferencesWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesWindowController.swift; sourceTree = "<group>"; };
+		C68EF043253072560094B00A /* SimTopLoginItem.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimTopLoginItem.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C68EF045253072560094B00A /* HelperAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperAppDelegate.swift; sourceTree = "<group>"; };
+		C68EF049253072570094B00A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C68EF04C253072570094B00A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C68EF04E253072570094B00A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C68EF04F253072570094B00A /* SimTopLoginItem.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SimTopLoginItem.entitlements; sourceTree = "<group>"; };
+		F9D197CC25227A3D00790D98 /* Simtop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Simtop.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F9D197CF25227A3D00790D98 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F9D197D125227A3D00790D98 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F9D197D325227A3F00790D98 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F9D197D625227A3F00790D98 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F9D197D825227A3F00790D98 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F9D197D925227A3F00790D98 /* Simtop.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Simtop.entitlements; sourceTree = "<group>"; };
+		F9D197E02522846900790D98 /* ObjcBridgingHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObjcBridgingHelper.h; sourceTree = "<group>"; };
+		F9D197E12522847B00790D98 /* Simtop-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Simtop-Bridging-Header.h"; sourceTree = "<group>"; };
+		F9D197E22522847C00790D98 /* ObjcBridgingHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObjcBridgingHelper.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C68EF040253072560094B00A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9D197C925227A3D00790D98 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C65C65372525DC2B005E60E4 /* Pods_Simtop.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		19F0170D405958E4AB00FAA4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8C01112861D15B9E8FA70B27 /* Pods-Simtop.debug.xcconfig */,
+				2B7B93C42FC4B8FDA376FD6F /* Pods-Simtop.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C68EF044253072560094B00A /* SimTopLoginItem */ = {
+			isa = PBXGroup;
+			children = (
+				C68EF045253072560094B00A /* HelperAppDelegate.swift */,
+				C68EF049253072570094B00A /* Assets.xcassets */,
+				C68EF04B253072570094B00A /* Main.storyboard */,
+				C68EF04E253072570094B00A /* Info.plist */,
+				C68EF04F253072570094B00A /* SimTopLoginItem.entitlements */,
+			);
+			path = SimTopLoginItem;
+			sourceTree = "<group>";
+		};
+		D1C9D45860010132F257EF0A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AC90470E271EC6D926D4F65A /* Pods_Simtop.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F9D197C325227A3D00790D98 = {
+			isa = PBXGroup;
+			children = (
+				F9D197CE25227A3D00790D98 /* Simtop */,
+				C68EF044253072560094B00A /* SimTopLoginItem */,
+				F9D197CD25227A3D00790D98 /* Products */,
+				19F0170D405958E4AB00FAA4 /* Pods */,
+				D1C9D45860010132F257EF0A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F9D197CD25227A3D00790D98 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F9D197CC25227A3D00790D98 /* Simtop.app */,
+				C68EF043253072560094B00A /* SimTopLoginItem.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F9D197CE25227A3D00790D98 /* Simtop */ = {
+			isa = PBXGroup;
+			children = (
+				F9D197CF25227A3D00790D98 /* AppDelegate.swift */,
+				C65C65272525CD4E005E60E4 /* PreferencesWindowController.swift */,
+				F9D197D125227A3D00790D98 /* ViewController.swift */,
+				F9D197D325227A3F00790D98 /* Assets.xcassets */,
+				F9D197D525227A3F00790D98 /* Main.storyboard */,
+				F9D197D825227A3F00790D98 /* Info.plist */,
+				F9D197D925227A3F00790D98 /* Simtop.entitlements */,
+				F9D197E02522846900790D98 /* ObjcBridgingHelper.h */,
+				F9D197E22522847C00790D98 /* ObjcBridgingHelper.m */,
+				F9D197E12522847B00790D98 /* Simtop-Bridging-Header.h */,
+			);
+			path = Simtop;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C68EF042253072560094B00A /* SimTopLoginItem */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C68EF052253072570094B00A /* Build configuration list for PBXNativeTarget "SimTopLoginItem" */;
+			buildPhases = (
+				C68EF03F253072560094B00A /* Sources */,
+				C68EF040253072560094B00A /* Frameworks */,
+				C68EF041253072560094B00A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SimTopLoginItem;
+			productName = SimTopLoginItem;
+			productReference = C68EF043253072560094B00A /* SimTopLoginItem.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F9D197CB25227A3D00790D98 /* Simtop */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F9D197DC25227A3F00790D98 /* Build configuration list for PBXNativeTarget "Simtop" */;
+			buildPhases = (
+				45DF56AF7AFA68992838AACE /* [CP] Check Pods Manifest.lock */,
+				F9D197C825227A3D00790D98 /* Sources */,
+				F9D197C925227A3D00790D98 /* Frameworks */,
+				F9D197CA25227A3D00790D98 /* Resources */,
+				FDC1C06DA3A5DEF0FCB8ED84 /* [CP] Embed Pods Frameworks */,
+				C65C65392525DC2B005E60E4 /* Embed Frameworks */,
+				C68EF053253076190094B00A /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Simtop;
+			productName = Simtop;
+			productReference = F9D197CC25227A3D00790D98 /* Simtop.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F9D197C425227A3D00790D98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1170;
+				LastUpgradeCheck = 1170;
+				ORGANIZATIONNAME = "Yaroslav Kopylov";
+				TargetAttributes = {
+					C68EF042253072560094B00A = {
+						CreatedOnToolsVersion = 11.7;
+					};
+					F9D197CB25227A3D00790D98 = {
+						CreatedOnToolsVersion = 11.7;
+						LastSwiftMigration = 1170;
+					};
+				};
+			};
+			buildConfigurationList = F9D197C725227A3D00790D98 /* Build configuration list for PBXProject "Simtop" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F9D197C325227A3D00790D98;
+			productRefGroup = F9D197CD25227A3D00790D98 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F9D197CB25227A3D00790D98 /* Simtop */,
+				C68EF042253072560094B00A /* SimTopLoginItem */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C68EF041253072560094B00A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C68EF04A253072570094B00A /* Assets.xcassets in Resources */,
+				C68EF04D253072570094B00A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9D197CA25227A3D00790D98 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9D197D425227A3F00790D98 /* Assets.xcassets in Resources */,
+				F9D197D725227A3F00790D98 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		45DF56AF7AFA68992838AACE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Simtop-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FDC1C06DA3A5DEF0FCB8ED84 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Simtop/Pods-Simtop-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Simtop/Pods-Simtop-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Simtop/Pods-Simtop-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C68EF03F253072560094B00A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C68EF046253072560094B00A /* HelperAppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9D197C825227A3D00790D98 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9D197E32522847C00790D98 /* ObjcBridgingHelper.m in Sources */,
+				F9D197D225227A3D00790D98 /* ViewController.swift in Sources */,
+				C65C65282525CD4E005E60E4 /* PreferencesWindowController.swift in Sources */,
+				F9D197D025227A3D00790D98 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C68EF04B253072570094B00A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C68EF04C253072570094B00A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F9D197D525227A3F00790D98 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F9D197D625227A3F00790D98 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C68EF050253072570094B00A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SimTopLoginItem/SimTopLoginItem.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 8U63L82KCQ;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = SimTopLoginItem/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = com.badoo.SimTopLoginItem;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		C68EF051253072570094B00A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SimTopLoginItem/SimTopLoginItem.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 8U63L82KCQ;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = SimTopLoginItem/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = com.badoo.SimTopLoginItem;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		F9D197DA25227A3F00790D98 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.16;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F9D197DB25227A3F00790D98 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.16;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		F9D197DD25227A3F00790D98 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8C01112861D15B9E8FA70B27 /* Pods-Simtop.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = Simtop/Simtop.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 8U63L82KCQ;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = Simtop/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = com.badoo.Simtop;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Simtop/Simtop-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		F9D197DE25227A3F00790D98 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B7B93C42FC4B8FDA376FD6F /* Pods-Simtop.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = Simtop/Simtop.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 8U63L82KCQ;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = Simtop/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = com.badoo.Simtop;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Simtop/Simtop-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C68EF052253072570094B00A /* Build configuration list for PBXNativeTarget "SimTopLoginItem" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C68EF050253072570094B00A /* Debug */,
+				C68EF051253072570094B00A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F9D197C725227A3D00790D98 /* Build configuration list for PBXProject "Simtop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F9D197DA25227A3F00790D98 /* Debug */,
+				F9D197DB25227A3F00790D98 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F9D197DC25227A3F00790D98 /* Build configuration list for PBXNativeTarget "Simtop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F9D197DD25227A3F00790D98 /* Debug */,
+				F9D197DE25227A3F00790D98 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F9D197C425227A3D00790D98 /* Project object */;
+}
